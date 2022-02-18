@@ -19,15 +19,53 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    //웹소켓
+//    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+////  stomp websocket 스톰 방식으로 통신하기 위한 js
+//    implementation 'org.webjars:stomp-websocket:2.3.3-1'
+////  webjar 채팅 웹 화면을 구현하기 위해, 필요한 js를 불러오기 위해 선언
+//    implementation 'org.webjars.bower:bootstrap:4.3.1'
+//    implementation 'org.webjars.bower:axios:0.17.1'
+////  sockjs는 websocket 을 지원하지 않는 낮은 버전의 브라우저에서도 websocket을 사용하게 하는 라이브러리
+//    implementation 'org.webjars:sockjs-client:1.1.2'
+////    프론트 웹개발을 freemarker, vue.js를 사용하여 개발
+//    implementation 'org.webjars.bower:vue:2.5.16'
+//    implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+//
+//    implementation 'org.springframework.boot:spring-boot-devtools'
+//
+//    implementation 'com.google.code.gson:gson:2.8.0'
+//
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+//
+//    compileOnly 'org.projectlombok:lombok'
+//    runtimeOnly 'com.h2database:h2'
+//    runtimeOnly 'mysql:mysql-connector-java'
+//    annotationProcessor 'org.projectlombok:lombok'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    //웹소켓
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'mysql:mysql-connector-java'
-    annotationProcessor 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+    implementation 'org.webjars.bower:bootstrap:4.3.1'
+    implementation 'org.webjars.bower:vue:2.5.16'
+    implementation 'org.webjars.bower:axios:0.17.1'
+    implementation 'org.webjars:sockjs-client:1.1.2'
+    implementation 'org.webjars:stomp-websocket:2.3.3-1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+
 
 
 }
