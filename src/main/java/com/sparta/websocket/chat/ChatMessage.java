@@ -1,4 +1,4 @@
-package com.sparta.websocket;
+package com.sparta.websocket.chat;
 
 import lombok.Getter;
 import lombok.Setter;

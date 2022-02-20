@@ -1,4 +1,4 @@
-package com.sparta.websocket;
+package com.sparta.websocket.chat;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -29,7 +29,7 @@ import java.util.List;
 @RequestMapping("/chat")
 public class ChatRoomController {
 
-    private final com.sparta.websocket.ChatRoomRepositoy chatRoomRepository;
+    private final ChatRoomRepositoy chatRoomRepository;
 
     // 채팅 리스트 화면
     @GetMapping("/room")
